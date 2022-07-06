@@ -18,23 +18,16 @@
             let resultStr = "";
 
             for (let i in str) {
-
                 for (let j in vowels) {
-
                     if (str[i] == vowels[j]) {
-
                         charCount = str[i].repeat(count - 1);
                         resultStr += charCount;
-
                     }
                 }
-
                 resultStr += str[i];
             }
-
             console.log(resultStr);
         }
-
 
         longText("Hello World", 3);
 
