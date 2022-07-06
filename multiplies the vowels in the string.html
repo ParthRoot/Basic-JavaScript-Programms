@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplies the vowels in the string</title>
+</head>
+
+<body>
+    <script>
+        //Create a loooong teeeext generator that takes in a string and an integer n, and multiplies the vowels in the string by n
+
+        function longText(str, count) {
+
+            let vowels = 'aeiouAEIOU';
+            let resultStr = "";
+
+            for (let i in str) {
+
+                for (let j in vowels) {
+
+                    if (str[i] == vowels[j]) {
+
+                        charCount = str[i].repeat(count - 1);
+                        resultStr += charCount;
+
+                    }
+                }
+
+                resultStr += str[i];
+            }
+
+            console.log(resultStr);
+        }
+
+
+        longText("Hello World", 3);
+
+        //output
+        // "lol" = "loool"
+        // "Hello World" = "Heeellooo Wooorld" 
+    </script>
+</body>
+
+</html>
